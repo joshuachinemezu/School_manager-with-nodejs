@@ -110,6 +110,7 @@ app.use('/', index)
 app.use('/users', users)
 app.use(express.static(__dirname + '/dist'));
 
-app.listen(8080, function () {
-    console.log('Server running at port 8080: http://127.0.0.1:8080')
+var port = process.env.PORT || 5000;
+app.listen(port, function () {
+    console.log('Server running on port ' + port);
 })
