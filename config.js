@@ -6,7 +6,7 @@ var config = {
         db: 'heroku_32d4a49c0714ef0' 		// your database name
     },
     server: {
-        host: '127.0.0.1',
+        host: 'localhost',
         port: '5000'
     }
 }
